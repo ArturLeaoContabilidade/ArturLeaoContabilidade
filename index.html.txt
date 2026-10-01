@@ -1,0 +1,1943 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Artur Leao Contabilidade | Contabilidade em Nossa Senhora da Glória - SE</title>
+
+    <meta name="description"
+          content="Artur Leao Contabilidade - Serviços de contabilidade, escrituração, assessoria contábil e apoio para empresas em Nossa Senhora da Glória - Sergipe.">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+          rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap"
+          rel="stylesheet">
+
+    <style>
+
+        :root {
+            --primary: #0b2d4d;
+            --primary-dark: #071f36;
+            --secondary: #1479c9;
+            --accent: #24a6e8;
+            --light: #f4f8fb;
+            --dark: #17212b;
+            --gray: #667585;
+            --white: #ffffff;
+            --success: #16a34a;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            color: var(--dark);
+            background: #fff;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        /* =========================
+           NAVBAR
+        ========================== */
+
+        .navbar {
+            background: rgba(7, 31, 54, 0.97);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            transition: .3s;
+        }
+
+        .navbar-brand {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 800;
+            color: white !important;
+            font-size: 1.15rem;
+        }
+
+        .navbar-brand span {
+            color: var(--accent);
+        }
+
+        .navbar-nav .nav-link {
+            color: rgba(255,255,255,.85) !important;
+            font-weight: 500;
+            margin-left: 15px;
+            transition: .3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #fff !important;
+        }
+
+        .btn-nav {
+            background: var(--secondary);
+            color: white;
+            border-radius: 8px;
+            padding: 9px 18px !important;
+        }
+
+        .btn-nav:hover {
+            background: var(--accent);
+        }
+
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+            min-height: 720px;
+            padding-top: 150px;
+            padding-bottom: 100px;
+            background:
+                linear-gradient(110deg, rgba(7,31,54,.98), rgba(11,45,77,.91)),
+                radial-gradient(circle at right, #1479c9, transparent 40%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: rgba(36,166,232,.08);
+            right: -150px;
+            top: 100px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,.09);
+            border: 1px solid rgba(255,255,255,.15);
+            padding: 9px 15px;
+            border-radius: 50px;
+            font-size: .85rem;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.4rem, 5vw, 4.3rem);
+            line-height: 1.08;
+            font-weight: 800;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: var(--accent);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: rgba(255,255,255,.78);
+            max-width: 650px;
+        }
+
+        .btn-primary-custom {
+            background: var(--secondary);
+            border: none;
+            color: white;
+            padding: 14px 25px;
+            border-radius: 8px;
+            font-weight: 700;
+            transition: .3s;
+        }
+
+        .btn-primary-custom:hover {
+            background: var(--accent);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline-custom {
+            border: 1px solid rgba(255,255,255,.35);
+            color: white;
+            padding: 13px 25px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: .3s;
+        }
+
+        .btn-outline-custom:hover {
+            background: white;
+            color: var(--primary);
+        }
+
+        .hero-card {
+            background: rgba(255,255,255,.08);
+            border: 1px solid rgba(255,255,255,.15);
+            border-radius: 20px;
+            padding: 35px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 30px 70px rgba(0,0,0,.18);
+        }
+
+        .hero-card-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(36,166,232,.15);
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-card h4 {
+            margin-bottom: 10px;
+        }
+
+        .hero-card p {
+            font-size: .95rem;
+        }
+
+        /* =========================
+           SECTION
+        ========================== */
+
+        section {
+            padding: 90px 0;
+        }
+
+        .section-title {
+            max-width: 700px;
+            margin: 0 auto 50px;
+            text-align: center;
+        }
+
+        .section-title .small-title {
+            color: var(--secondary);
+            text-transform: uppercase;
+            font-size: .8rem;
+            letter-spacing: 2px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .section-title h2 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            color: var(--gray);
+            line-height: 1.8;
+        }
+
+        /* =========================
+           ABOUT
+        ========================== */
+
+        .about {
+            background: var(--light);
+        }
+
+        .about-box {
+            background: white;
+            border-radius: 18px;
+            padding: 35px;
+            height: 100%;
+            box-shadow: 0 10px 35px rgba(11,45,77,.06);
+        }
+
+        .about-icon {
+            width: 55px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e8f4fb;
+            color: var(--secondary);
+            border-radius: 12px;
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+        }
+
+        .about-box h4 {
+            font-size: 1.2rem;
+        }
+
+        .about-box p {
+            color: var(--gray);
+            line-height: 1.8;
+            margin-bottom: 0;
+        }
+
+        /* =========================
+           SERVICES
+        ========================== */
+
+        .service-card {
+            height: 100%;
+            padding: 32px;
+            border: 1px solid #e6edf2;
+            border-radius: 16px;
+            background: white;
+            transition: .3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(20,121,201,.25);
+            box-shadow: 0 20px 50px rgba(11,45,77,.10);
+        }
+
+        .service-icon {
+            width: 62px;
+            height: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eaf5fc;
+            color: var(--secondary);
+            border-radius: 14px;
+            font-size: 1.6rem;
+            margin-bottom: 22px;
+        }
+
+        .service-card h4 {
+            font-size: 1.15rem;
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            color: var(--gray);
+            font-size: .92rem;
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        /* =========================
+           NUMBERS
+        ========================== */
+
+        .numbers {
+            background: var(--primary);
+            color: white;
+        }
+
+        .number-box {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .number-box i {
+            color: var(--accent);
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .number-box h3 {
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+
+        .number-box p {
+            color: rgba(255,255,255,.65);
+            margin: 0;
+        }
+
+        /* =========================
+           DIFFERENTIALS
+        ========================== */
+
+        .differential {
+            padding: 20px 0;
+            display: flex;
+            gap: 18px;
+        }
+
+        .differential-icon {
+            min-width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eaf5fc;
+            color: var(--secondary);
+            border-radius: 10px;
+        }
+
+        .differential h5 {
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+
+        .differential p {
+            color: var(--gray);
+            font-size: .9rem;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* =========================
+           COMPANY DATA
+        ========================== */
+
+        .company-data {
+            background: var(--light);
+        }
+
+        .data-card {
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 10px 35px rgba(11,45,77,.06);
+        }
+
+        .data-header {
+            background: var(--primary);
+            color: white;
+            padding: 25px 30px;
+        }
+
+        .data-header h4 {
+            margin: 0;
+        }
+
+        .data-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 15px 30px;
+            border-bottom: 1px solid #edf1f4;
+        }
+
+        .data-row:last-child {
+            border-bottom: none;
+        }
+
+        .data-label {
+            color: var(--gray);
+            font-size: .9rem;
+        }
+
+        .data-value {
+            font-weight: 600;
+            text-align: right;
+            font-size: .9rem;
+        }
+
+        .status {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #e9f8ef;
+            color: var(--success);
+            padding: 5px 10px;
+            border-radius: 30px;
+            font-size: .8rem;
+        }
+
+        /* =========================
+           CTA
+        ========================== */
+
+        .cta {
+            background:
+                linear-gradient(110deg, rgba(11,45,77,.97), rgba(20,121,201,.94));
+            color: white;
+        }
+
+        .cta h2 {
+            font-size: 2.3rem;
+            font-weight: 800;
+        }
+
+        .cta p {
+            color: rgba(255,255,255,.78);
+            line-height: 1.8;
+        }
+
+        /* =========================
+           CONTACT
+        ========================== */
+
+        .contact-card {
+            padding: 28px;
+            background: white;
+            border: 1px solid #e7edf2;
+            border-radius: 15px;
+            height: 100%;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: #eaf5fc;
+            color: var(--secondary);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            margin-bottom: 18px;
+        }
+
+        .contact-card h5 {
+            font-size: 1rem;
+        }
+
+        .contact-card p {
+            color: var(--gray);
+            font-size: .9rem;
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        .contact-card a {
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .map-container {
+            height: 420px;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 10px 35px rgba(11,45,77,.08);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background: #061b2e;
+            color: white;
+            padding: 55px 0 25px;
+        }
+
+        footer h5 {
+            font-size: 1rem;
+            margin-bottom: 18px;
+        }
+
+        footer p,
+        footer li {
+            color: rgba(255,255,255,.58);
+            font-size: .88rem;
+            line-height: 1.8;
+        }
+
+        footer ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        footer a {
+            color: rgba(255,255,255,.65);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        .footer-logo {
+            font-family: "Montserrat", sans-serif;
+            font-size: 1.3rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .footer-logo span {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,.08);
+            margin-top: 35px;
+            padding-top: 22px;
+        }
+
+        /* =========================
+           WHATSAPP
+        ========================== */
+
+        .whatsapp {
+            position: fixed;
+            right: 22px;
+            bottom: 22px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            z-index: 999;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(37,211,102,.35);
+            transition: .3s;
+        }
+
+        .whatsapp:hover {
+            color: white;
+            transform: scale(1.08);
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media (max-width: 991px) {
+
+            .navbar-nav {
+                padding-top: 15px;
+            }
+
+            .navbar-nav .nav-link {
+                margin-left: 0;
+                padding: 10px 0;
+            }
+
+            .hero {
+                min-height: auto;
+                padding-top: 130px;
+            }
+
+            .hero-card {
+                margin-top: 50px;
+            }
+
+            section {
+                padding: 70px 0;
+            }
+        }
+
+        @media (max-width: 576px) {
+
+            .hero {
+                padding-top: 115px;
+                padding-bottom: 70px;
+            }
+
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+
+            .hero .btn {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .data-row {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .data-value {
+                text-align: left;
+            }
+
+            .map-container {
+                height: 320px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="#inicio">
+            Artur Leao <span>Contabilidade</span>
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Início</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#empresa">Empresa</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicos">Serviços</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#dados">Informações</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link btn-nav ms-lg-3" href="#contato">
+                        <i class="bi bi-chat-dots me-1"></i>
+                        Fale Conosco
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<header class="hero" id="inicio">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-7">
+
+                <div class="hero-badge">
+                    <i class="bi bi-patch-check-fill"></i>
+                    Contabilidade profissional em Sergipe
+                </div>
+
+                <h1>
+                    Contabilidade para
+                    <span>organizar, orientar</span>
+                    e fazer sua empresa crescer.
+                </h1>
+
+                <p>
+                    Soluções contábeis para empresas que buscam
+                    organização financeira, segurança e tranquilidade
+                    para cuidar do que realmente importa:
+                    seus negócios.
+                </p>
+
+                <div class="d-flex flex-wrap gap-3 mt-4">
+
+                    <a href="https://wa.me/5579999810947"
+                       target="_blank"
+                       class="btn btn-primary-custom">
+
+                        <i class="bi bi-whatsapp me-2"></i>
+                        Falar pelo WhatsApp
+
+                    </a>
+
+                    <a href="#servicos"
+                       class="btn btn-outline-custom">
+
+                        Conheça nossos serviços
+                        <i class="bi bi-arrow-down ms-2"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-5">
+
+                <div class="hero-card">
+
+                    <div class="hero-card-icon">
+                        <i class="bi bi-calculator"></i>
+                    </div>
+
+                    <h4>
+                        Artur Leao Contabilidade
+                    </h4>
+
+                    <p>
+                        Escritório especializado em atividades
+                        de contabilidade, oferecendo atendimento
+                        próximo e soluções para a rotina empresarial.
+                    </p>
+
+                    <hr style="border-color:rgba(255,255,255,.12);">
+
+                    <div class="d-flex justify-content-between">
+
+                        <span class="small text-white-50">
+                            Desde
+                        </span>
+
+                        <strong>
+                            2012
+                        </strong>
+
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-2">
+
+                        <span class="small text-white-50">
+                            Situação
+                        </span>
+
+                        <span class="text-success fw-bold">
+                            <i class="bi bi-check-circle-fill"></i>
+                            Ativa
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     EMPRESA
+===================================================== -->
+
+<section class="about" id="empresa">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span class="small-title">
+                Sobre a empresa
+            </span>
+
+            <h2>
+                Experiência e compromisso com sua empresa
+            </h2>
+
+            <p>
+                A Artur Leao Contabilidade atua desde 2012,
+                oferecendo serviços contábeis para empresas
+                que precisam de organização, acompanhamento
+                e suporte profissional.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="about-box">
+
+                    <div class="about-icon">
+                        <i class="bi bi-award"></i>
+                    </div>
+
+                    <h4>
+                        Experiência
+                    </h4>
+
+                    <p>
+                        Empresa fundada em 22 de outubro de 2012,
+                        com atuação contínua no segmento contábil.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="about-box">
+
+                    <div class="about-icon">
+                        <i class="bi bi-people"></i>
+                    </div>
+
+                    <h4>
+                        Atendimento próximo
+                    </h4>
+
+                    <p>
+                        Um relacionamento próximo facilita a
+                        comunicação e ajuda a tornar as decisões
+                        empresariais mais organizadas.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="about-box">
+
+                    <div class="about-icon">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+
+                    <h4>
+                        Segurança contábil
+                    </h4>
+
+                    <p>
+                        Informação organizada para auxiliar sua
+                        empresa no cumprimento das suas obrigações
+                        e na tomada de decisões.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SERVIÇOS
+===================================================== -->
+
+<section id="servicos">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span class="small-title">
+                O que fazemos
+            </span>
+
+            <h2>
+                Soluções contábeis para sua empresa
+            </h2>
+
+            <p>
+                Conte com suporte contábil para manter a
+                organização das informações e acompanhar
+                as principais necessidades do seu negócio.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="bi bi-journal-text"></i>
+                    </div>
+
+                    <h4>
+                        Escrituração Contábil
+                    </h4>
+
+                    <p>
+                        Organização e registro das movimentações
+                        contábeis da empresa de forma estruturada.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="bi bi-file-earmark-check"></i>
+                    </div>
+
+                    <h4>
+                        Obrigações Contábeis
+                    </h4>
+
+                    <p>
+                        Acompanhamento das obrigações e informações
+                        necessárias para manter a empresa organizada.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="bi bi-bar-chart-line"></i>
+                    </div>
+
+                    <h4>
+                        Relatórios Contábeis
+                    </h4>
+
+                    <p>
+                        Informações contábeis organizadas para
+                        auxiliar empresários no acompanhamento
+                        da empresa.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="bi bi-calculator-fill"></i>
+                    </div>
+
+                    <h4>
+                        Apuração Contábil
+                    </h4>
+
+                    <p>
+                        Apoio na organização dos dados necessários
+                        para os processos de apuração da empresa.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="bi bi-building"></i>
+                    </div>
+
+                    <h4>
+                        Assessoria Empresarial
+                    </h4>
+
+                    <p>
+                        Orientação contábil para apoiar empresários
+                        nas necessidades administrativas do negócio.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="bi bi-headset"></i>
+                    </div>
+
+                    <h4>
+                        Suporte Contábil
+                    </h4>
+
+                    <p>
+                        Atendimento para esclarecer dúvidas e
+                        acompanhar as demandas contábeis da empresa.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     NÚMEROS
+===================================================== -->
+
+<section class="numbers">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-6 col-lg-3">
+
+                <div class="number-box">
+
+                    <i class="bi bi-calendar3"></i>
+
+                    <h3>2012</h3>
+
+                    <p>
+                        Ano de fundação
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-lg-3">
+
+                <div class="number-box">
+
+                    <i class="bi bi-building"></i>
+
+                    <h3>ME</h3>
+
+                    <p>
+                        Micro Empresa
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-lg-3">
+
+                <div class="number-box">
+
+                    <i class="bi bi-briefcase"></i>
+
+                    <h3>69.20-6-01</h3>
+
+                    <p>
+                        Atividade principal
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-lg-3">
+
+                <div class="number-box">
+
+                    <i class="bi bi-check-circle"></i>
+
+                    <h3>Ativa</h3>
+
+                    <p>
+                        Situação cadastral
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     DIFERENCIAIS
+===================================================== -->
+
+<section>
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <span class="small-title text-primary fw-bold">
+                    Por que contar conosco?
+                </span>
+
+                <h2 class="mt-2 mb-4">
+                    Mais organização para você
+                    cuidar do seu negócio.
+                </h2>
+
+                <p class="text-secondary lh-lg">
+                    Uma contabilidade organizada contribui para
+                    que o empresário tenha informações importantes
+                    para acompanhar sua empresa e planejar seus
+                    próximos passos.
+                </p>
+
+                <div class="differential">
+
+                    <div class="differential-icon">
+                        <i class="bi bi-check-lg"></i>
+                    </div>
+
+                    <div>
+                        <h5>
+                            Atendimento personalizado
+                        </h5>
+
+                        <p>
+                            Comunicação próxima e direcionada
+                            às necessidades da empresa.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="differential">
+
+                    <div class="differential-icon">
+                        <i class="bi bi-check-lg"></i>
+                    </div>
+
+                    <div>
+                        <h5>
+                            Organização
+                        </h5>
+
+                        <p>
+                            Informações contábeis estruturadas
+                            para facilitar o acompanhamento.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="differential">
+
+                    <div class="differential-icon">
+                        <i class="bi bi-check-lg"></i>
+                    </div>
+
+                    <div>
+                        <h5>
+                            Experiência
+                        </h5>
+
+                        <p>
+                            Atuação no segmento contábil desde 2012.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="p-4 p-lg-5 rounded-4"
+                     style="background:#f4f8fb;">
+
+                    <i class="bi bi-quote"
+                       style="font-size:3rem;color:#1479c9;">
+                    </i>
+
+                    <h3 class="mt-3">
+                        "Organização hoje para decisões
+                        melhores amanhã."
+                    </h3>
+
+                    <p class="text-secondary mt-3 mb-0">
+                        Nosso trabalho busca proporcionar mais
+                        tranquilidade para que empresários possam
+                        concentrar seus esforços na gestão e no
+                        crescimento de seus negócios.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     DADOS DA EMPRESA
+===================================================== -->
+
+<section class="company-data" id="dados">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span class="small-title">
+                Informações cadastrais
+            </span>
+
+            <h2>
+                Dados da Artur Leao Contabilidade
+            </h2>
+
+            <p>
+                Informações cadastrais e empresariais
+                disponibilizadas para consulta.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-lg-6">
+
+                <div class="data-card">
+
+                    <div class="data-header">
+
+                        <h4>
+                            <i class="bi bi-building me-2"></i>
+                            Dados da Empresa
+                        </h4>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <span class="data-label">
+                            Razão Social
+                        </span>
+
+                        <span class="data-value">
+                            Artur Leao Contabilidade LTDA
+                        </span>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <span class="data-label">
+                            Nome Fantasia
+                        </span>
+
+                        <span class="data-value">
+                            Artur Leao Contabilidade
+                        </span>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <span class="data-label">
+                            CNPJ
+                        </span>
+
+                        <span class="data-value">
+                            17.039.738/0001-65
+                        </span>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <span class="data-label">
+                            Data de abertura
+                        </span>
+
+                        <span class="data-value">
+                            22/10/2012
+                        </span>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <span class="data-label">
+                            Porte
+                        </span>
+
+                        <span class="data-value">
+                            Micro Empresa
+                        </span>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <span class="data-label">
+                            Natureza Jurídica
+                        </span>
+
+                        <span class="data-value">
+                            Sociedade Empresária Limitada
+                        </span>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <span class="data-label">
+                            Situação
+                        </span>
+
+                        <span class="data-value">
+
+                            <span class="status">
+                                <i class="bi bi-check-circle-fill"></i>
+                                Ativa
+                            </span>
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="data-card">
+
+                    <div class="data-header">
+
+                        <h4>
+                            <i class="bi bi-file-earmark-text me-2"></i>
+                            Informações Contábeis
+                        </h4>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <span class="data-label">
+                            CRC
+                        </span>
+
+                        <span class="data-value">
+                            SE-000817/O
+                        </span>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <span class="data-label">
+                            Atividade Principal
+                        </span>
+
+                        <span class="data-value">
+                            69.20-6-01
+                        </span>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <span class="data-label">
+                            Descrição
+                        </span>
+
+                        <span class="data-value">
+                            Atividades de contabilidade
+                        </span>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <span class="data-label">
+                            Capital Social
+                        </span>
+
+                        <span class="data-value">
+                            R$ 10.000,00
+                        </span>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <span class="data-label">
+                            Simples Nacional
+                        </span>
+
+                        <span class="data-value">
+                            Sim — desde 01/01/2026
+                        </span>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <span class="data-label">
+                            Tipo
+                        </span>
+
+                        <span class="data-value">
+                            Matriz
+                        </span>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <span class="data-label">
+                            Sócio-Administrador
+                        </span>
+
+                        <span class="data-value">
+                            Artur Leao Brasil Neto
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <div class="row align-items-center g-4">
+
+            <div class="col-lg-8">
+
+                <h2>
+                    Precisa de atendimento contábil?
+                </h2>
+
+                <p class="mb-0">
+                    Entre em contato com a Artur Leao Contabilidade
+                    e converse conosco sobre as necessidades
+                    da sua empresa.
+                </p>
+
+            </div>
+
+            <div class="col-lg-4 text-lg-end">
+
+                <a href="https://wa.me/5579999810947"
+                   target="_blank"
+                   class="btn btn-light btn-lg fw-bold">
+
+                    <i class="bi bi-whatsapp text-success me-2"></i>
+                    Falar no WhatsApp
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTATO
+===================================================== -->
+
+<section id="contato">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span class="small-title">
+                Entre em contato
+            </span>
+
+            <h2>
+                Estamos à disposição
+            </h2>
+
+            <p>
+                Utilize nossos canais de atendimento ou
+                visite nosso escritório em Nossa Senhora
+                da Glória - Sergipe.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4 mb-5">
+
+            <div class="col-md-4">
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="bi bi-whatsapp"></i>
+                    </div>
+
+                    <h5>
+                        WhatsApp / Telefone
+                    </h5>
+
+                    <p>
+                        <a href="https://wa.me/5579999810947"
+                           target="_blank">
+                            (79) 99981-0947
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+
+                    <h5>
+                        E-mail
+                    </h5>
+
+                    <p>
+                        <a href="mailto:rosangela@cednetprovenet.digital">
+                            rosangela@cednetprovenet.digital
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+
+                    <h5>
+                        Endereço
+                    </h5>
+
+                    <p>
+                        Avenida 7 de Setembro, 181<br>
+                        Centro — Nossa Senhora da Glória/SE<br>
+                        CEP 49680-000
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="row g-4 align-items-stretch">
+
+            <div class="col-lg-5">
+
+                <div class="contact-card">
+
+                    <h4 class="mb-4">
+                        Onde estamos
+                    </h4>
+
+                    <p class="mb-4">
+                        <i class="bi bi-geo-alt-fill text-primary me-2"></i>
+                        Avenida 7 de Setembro, 181
+                    </p>
+
+                    <p class="mb-4">
+                        <i class="bi bi-pin-map-fill text-primary me-2"></i>
+                        Centro — Nossa Senhora da Glória/SE
+                    </p>
+
+                    <p class="mb-4">
+                        <i class="bi bi-mailbox text-primary me-2"></i>
+                        CEP: 49680-000
+                    </p>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=Avenida+7+de+Setembro+181+Nossa+Senhora+da+Glória+SE"
+                       target="_blank"
+                       class="btn btn-primary">
+
+                        <i class="bi bi-map me-2"></i>
+                        Abrir no Google Maps
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-7">
+
+                <div class="map-container">
+
+                    <iframe
+                        src="https://www.google.com/maps?q=Avenida%207%20de%20Setembro%20181%2C%20Nossa%20Senhora%20da%20Gl%C3%B3ria%2C%20SE&output=embed"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-lg-5">
+
+                <div class="footer-logo">
+                    Artur Leao <span>Contabilidade</span>
+                </div>
+
+                <p>
+                    Serviços contábeis para empresas que
+                    valorizam organização, informação e
+                    atendimento profissional.
+                </p>
+
+                <p class="mb-0">
+                    <strong>CNPJ:</strong>
+                    17.039.738/0001-65
+                </p>
+
+            </div>
+
+
+            <div class="col-6 col-lg-3">
+
+                <h5>
+                    Navegação
+                </h5>
+
+                <ul>
+
+                    <li>
+                        <a href="#inicio">Início</a>
+                    </li>
+
+                    <li>
+                        <a href="#empresa">Empresa</a>
+                    </li>
+
+                    <li>
+                        <a href="#servicos">Serviços</a>
+                    </li>
+
+                    <li>
+                        <a href="#dados">Informações</a>
+                    </li>
+
+                    <li>
+                        <a href="#contato">Contato</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="col-6 col-lg-4">
+
+                <h5>
+                    Atendimento
+                </h5>
+
+                <ul>
+
+                    <li>
+                        <i class="bi bi-telephone me-2"></i>
+                        (79) 99981-0947
+                    </li>
+
+                    <li>
+                        <i class="bi bi-envelope me-2"></i>
+                        rosangela@cednetprovenet.digital
+                    </li>
+
+                    <li>
+                        <i class="bi bi-geo-alt me-2"></i>
+                        Nossa Senhora da Glória - SE
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom text-center">
+
+            <p class="mb-0">
+                © 2026 Artur Leao Contabilidade LTDA.
+                Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     WHATSAPP FLUTUANTE
+===================================================== -->
+
+<a href="https://wa.me/5579999810947"
+   target="_blank"
+   class="whatsapp"
+   aria-label="Falar pelo WhatsApp">
+
+    <i class="bi bi-whatsapp"></i>
+
+</a>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<!-- =====================================================
+     SCRIPT
+===================================================== -->
+
+<script>
+
+    // Fecha o menu mobile ao clicar em um link
+    document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
+
+        link.addEventListener('click', function() {
+
+            const menu = document.querySelector('.navbar-collapse');
+
+            if (menu.classList.contains('show')) {
+
+                const bsCollapse =
+                    bootstrap.Collapse.getInstance(menu);
+
+                if (bsCollapse) {
+                    bsCollapse.hide();
+                }
+
+            }
+
+        });
+
+    });
+
+</script>
+
+</body>
+</html>
